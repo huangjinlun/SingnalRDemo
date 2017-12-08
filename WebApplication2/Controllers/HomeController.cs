@@ -10,20 +10,24 @@ namespace WebApplication2.Controllers
     {
         public ActionResult Index()
         {
+            TempData["temp"] = "shit";
             return View();
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
+            var temp = TempData["temp"];
             return View();
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
+            return View();
+        }
+        public ActionResult Chat()
+        {
             return View();
         }
     }
