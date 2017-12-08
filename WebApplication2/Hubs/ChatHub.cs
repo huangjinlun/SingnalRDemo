@@ -16,9 +16,5 @@ namespace WebApplication2.Hubs
         {
             Clients.All.addNewMessageToPage(name, message);
         }
-        //public void GetName(string name)
-        //{
-        //    Clients.All.getName(name);
-        //}
     }
 }
